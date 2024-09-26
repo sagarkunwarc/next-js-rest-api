@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  sagardb:
+    container_name: sagardb
+    image: postgres:14-alpine
+    ports:
+      - "5436:5432"
+    environment:
+      POSTGRES_USER: sagaruser
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: sagardb-local
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata: {}
