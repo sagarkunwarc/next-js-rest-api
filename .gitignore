@@ -20,7 +20,6 @@
 # misc
 .DS_Store
 *.pem
-/.vscode
 
 # debug
 npm-debug.log*
@@ -36,3 +35,15 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+
+# They ignored Idea (Webstorm) completely
+.idea/
+
+# However, they kept the following 4 files version controlled
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
